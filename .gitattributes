@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.unity binary lockable
+*.prefab binary lockable
+*.asset binary lockable
+*.mat binary lockable
