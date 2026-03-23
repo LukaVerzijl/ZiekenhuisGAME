@@ -1,5 +1,7 @@
+using System;
 using Code.Ui;
 using Code.Utils;
+using UnityEngine;
 
 namespace Code.Managers
 {
@@ -7,9 +9,29 @@ namespace Code.Managers
     {
         #region Modal
 
-        public LoginModal _loginModal;
+        public GameObject[] panels;
 
         #endregion
+
+        private void Start()
+        {
+            showPanel("LoginModal");
+        }
+
+        public void showPanel(string panelName)
+        {
+            foreach (GameObject panel in panels)
+            {
+                if (panel.name == panelName)
+                {
+                    panel.SetActive(true);
+                }
+                else
+                {
+                    panel.SetActive(false);
+                }
+            }
+        }
 
     }
 }
