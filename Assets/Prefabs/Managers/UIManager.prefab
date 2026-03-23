@@ -131,7 +131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8561363479563970694, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8847649759842382890, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
       propertyPath: m_Pivot.x
@@ -325,6 +325,10 @@ PrefabInstance:
     - target: {fileID: 8048280926982119192, guid: e46fbf2566f004919afc61fa5a4acfc4, type: 3}
       propertyPath: m_Name
       value: ChooseModal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048280926982119192, guid: e46fbf2566f004919afc61fa5a4acfc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
