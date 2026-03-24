@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1169003693844419131}
   - component: {fileID: 6185247179085678244}
-  - component: {fileID: 1574584375878353602}
-  - component: {fileID: 8245946825214756638}
   m_Layer: 0
   m_Name: ApiManager
   m_TagString: Untagged
@@ -49,30 +47,4 @@ MonoBehaviour:
   user:
     Email: lukaverzijl@hotmail.com
     Password: Test12345678!
-  ApiClientObject: {fileID: 8892727525189104309}
---- !u!114 &1574584375878353602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8892727525189104309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fed4f7f0e67c302469248224d4bac5a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UserApiClient
-  webClient: {fileID: 8245946825214756638}
---- !u!114 &8245946825214756638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8892727525189104309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c86bd7546f1f94e9c106ea19a09157, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WebClient
-  baseUrl: https://development2.lukaverzijl.nl
+  ApiClientObject: {fileID: 784580286117217617, guid: 706035393c69be04c85a18c6352adbb0, type: 3}
