@@ -9,28 +9,39 @@ namespace Code.Managers
     {
         #region Modal
 
-        public GameObject[] panels;
-
+        public GameObject LoginModal;
+        public GameObject ChooseModal;
+        public GameObject ChooseLevelChildModal;
+        
         #endregion
 
         private void Start()
         {
-            showPanel("LoginModal");
+            HideAllUI();
+            ShowLoginModal();
         }
 
-        public void showPanel(string panelName)
+        public void ShowLoginModal()
         {
-            foreach (GameObject panel in panels)
-            {
-                if (panel.name == panelName)
-                {
-                    panel.SetActive(true);
-                }
-                else
-                {
-                    panel.SetActive(false);
-                }
-            }
+            LoginModal.SetActive(true);
+        }
+
+        public void ShowChooseModal()
+        {
+            ChooseModal.SetActive(true);
+        }
+
+        public void ShowChooseLevelModal()
+        {
+            ChooseLevelChildModal.SetActive(true);
+        }
+
+
+        public void HideAllUI()
+        {
+            LoginModal.SetActive(false);
+            ChooseModal.SetActive(false);
+            ChooseLevelChildModal.SetActive(false);
         }
 
     }
