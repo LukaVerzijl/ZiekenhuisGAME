@@ -12,6 +12,7 @@ namespace Code.Managers
         public GameObject LoginModal;
         public GameObject ChooseModal;
         public GameObject ChooseLevelChildModal;
+        public GameObject RegisterModal;
         
         #endregion
 
@@ -36,12 +37,18 @@ namespace Code.Managers
             ChooseLevelChildModal.SetActive(true);
         }
 
+        public void ShowRegisterModal()
+        {
+            RegisterModal.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
             LoginModal.SetActive(false);
             ChooseModal.SetActive(false);
             ChooseLevelChildModal.SetActive(false);
+            RegisterModal.SetActive(false);
         }
 
     }
