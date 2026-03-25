@@ -15,6 +15,7 @@ namespace Code.Managers
         public GameObject RegisterModal;
         public GameObject OuderChoseModal;
         public GameObject ParentControlModal;
+        public GameObject KarakterKiezenModal;
         
         #endregion
 
@@ -54,6 +55,11 @@ namespace Code.Managers
             ParentControlModal.SetActive(true);
         }
 
+        public void ShowKarakterKiezenModal()
+        {
+            KarakterKiezenModal.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
@@ -63,6 +69,7 @@ namespace Code.Managers
             RegisterModal.SetActive(false);
             OuderChoseModal.SetActive(false);
             ParentControlModal.SetActive(false);
+            KarakterKiezenModal.SetActive(false);
         }
 
     }

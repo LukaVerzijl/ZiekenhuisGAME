@@ -129,6 +129,7 @@ MonoBehaviour:
   RegisterModal: {fileID: 1637886486787859486}
   OuderChoseModal: {fileID: 6754216473321475215}
   ParentControlModal: {fileID: 5797388196447017714}
+  KarakterKiezenModal: {fileID: 4731874292336199747}
 --- !u!1001 &254805951215203372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1366,6 +1367,11 @@ PrefabInstance:
 --- !u!224 &2012063552305835847 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5681746155004544713, guid: 78c8828c99bac4ffc9a3f396c537f8a8, type: 3}
+  m_PrefabInstance: {fileID: 6140050223794219406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4731874292336199747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1485952291647218125, guid: 78c8828c99bac4ffc9a3f396c537f8a8, type: 3}
   m_PrefabInstance: {fileID: 6140050223794219406}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6947615709271592088
