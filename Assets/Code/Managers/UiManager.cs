@@ -14,6 +14,7 @@ namespace Code.Managers
         public GameObject ChooseLevelChildModal;
         public GameObject RegisterModal;
         public GameObject OuderChoseModal;
+        public GameObject ParentControlModal;
         
         #endregion
 
@@ -48,6 +49,11 @@ namespace Code.Managers
             OuderChoseModal.SetActive(true);
         }
 
+        public void ShowParentControlModal()
+        {
+            ParentControlModal.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
@@ -56,6 +62,7 @@ namespace Code.Managers
             ChooseLevelChildModal.SetActive(false);
             RegisterModal.SetActive(false);
             OuderChoseModal.SetActive(false);
+            ParentControlModal.SetActive(false);
         }
 
     }
