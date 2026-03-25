@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChooseLevelChildModal
       objectReference: {fileID: 0}
+    - target: {fileID: 1765933063897430188, guid: e9f7c0d2228974ed094f33071659ba10, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8616989939974330113, guid: e9f7c0d2228974ed094f33071659ba10, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
