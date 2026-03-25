@@ -124,6 +124,7 @@ MonoBehaviour:
   ChooseLevelChildModal: {fileID: 1947976620143758464}
   RegisterModal: {fileID: 1637886486787859486}
   OuderChoseModal: {fileID: 6754216473321475215}
+  ParentControlModal: {fileID: 0}
 --- !u!1001 &254805951215203372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -340,6 +341,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3538705119437516825}
     m_Modifications:
+    - target: {fileID: 742660059126596720, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 742660059126596720, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 759859575145063084, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 180
@@ -438,7 +447,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1847216444871716091, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
       propertyPath: m_fontSize
-      value: 61.4
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847216444871716091, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847216444871716091, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2254006462735850451, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -469,6 +486,14 @@ PrefabInstance:
       value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6955687834850021502, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503255643340740571, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503255643340740571, guid: e63ffb7d3e5974aefad23706c981063e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 150
       objectReference: {fileID: 0}
@@ -594,6 +619,10 @@ PrefabInstance:
     - target: {fileID: 1583929238232743744, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411589980566979727, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7862248958354969644, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
       propertyPath: m_AnchoredPosition.x
