@@ -16,6 +16,7 @@ namespace Code.Managers
         public GameObject OuderChoseModal;
         public GameObject ParentControlModal;
         public GameObject KarakterKiezenModal;
+        public GameObject VideoKindModal;
         
         #endregion
 
@@ -60,6 +61,11 @@ namespace Code.Managers
             KarakterKiezenModal.SetActive(true);
         }
 
+        public void ShowVideoKindModal()
+        {
+            VideoKindModal.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
@@ -70,6 +76,7 @@ namespace Code.Managers
             OuderChoseModal.SetActive(false);
             ParentControlModal.SetActive(false);
             KarakterKiezenModal.SetActive(false);
+            VideoKindModal.SetActive(false);
         }
 
     }
