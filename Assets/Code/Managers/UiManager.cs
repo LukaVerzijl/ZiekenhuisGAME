@@ -19,7 +19,7 @@ namespace Code.Managers
         private void Start()
         {
             HideAllUI();
-            ShowLoginModal();
+            ChooseModal.SetActive(true);
         }
 
         public void ShowLoginModal()
