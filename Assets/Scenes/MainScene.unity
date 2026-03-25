@@ -419,6 +419,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &787027009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6185247179085678244, guid: 76e146dc6243f7b44a45cf3a2b2ae12c, type: 3}
+  m_PrefabInstance: {fileID: 4396994188227548306}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a70fc6b0d09f416f8b050cff303c7825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ApiManager
 --- !u!114 &1738555675 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1741339829075001660, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
@@ -517,6 +528,34 @@ PrefabInstance:
     - target: {fileID: 3538705119437516825, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977309772871497670, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977309772871497670, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977309772871497670, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 787027009}
+    - target: {fileID: 4977309772871497670, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977309772871497670, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SendMessageUpwards
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977309772871497670, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ApiManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977309772871497670, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6754216473321475215, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
       propertyPath: m_IsActive
