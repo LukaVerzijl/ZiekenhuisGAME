@@ -560,7 +560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7997382553556920643, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ShowChooseModal
+      value: ShowChooseLevelModal
       objectReference: {fileID: 0}
     - target: {fileID: 7997382553556920643, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -583,7 +583,9 @@ PrefabInstance:
       value: -1183493901
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8863810687410982514, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+    - {fileID: -2175146964848548560, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
