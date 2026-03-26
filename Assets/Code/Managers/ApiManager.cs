@@ -16,8 +16,7 @@ public class ApiManager : Singleton<ApiManager>
     public GameObject ApiClientObject;
 
     
-    private GameObject spawnedUserApiClient;
-    private GameObject spawnedClientsApiClient;
+    private GameObject spawnedApiClient;
     private UserApiClient userApiClient;
     private ClientsApiClient clientsApiClient;
 
@@ -26,10 +25,10 @@ public class ApiManager : Singleton<ApiManager>
 
     private new void Awake()
     {
-        spawnedUserApiClient = Instantiate(ApiClientObject, this.gameObject.transform);
+        spawnedApiClient = Instantiate(ApiClientObject, this.gameObject.transform);
         
-        userApiClient = spawnedUserApiClient.GetComponent<UserApiClient>();
-        clientsApiClient = spawnedClientsApiClient.GetComponent<ClientsApiClient>();
+        userApiClient = spawnedApiClient.GetComponent<UserApiClient>();
+        clientsApiClient = spawnedApiClient.GetComponent<ClientsApiClient>();
         
         DontDestroyOnLoad(this.gameObject.transform.root.gameObject);
     }

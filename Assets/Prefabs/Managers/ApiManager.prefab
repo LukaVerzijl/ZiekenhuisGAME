@@ -48,3 +48,4 @@ MonoBehaviour:
     Email: lukaverzijl@hotmail.com
     Password: Test12345678!
   ApiClientObject: {fileID: 784580286117217617, guid: 706035393c69be04c85a18c6352adbb0, type: 3}
+  ClientsApiClientObject: {fileID: 0}
