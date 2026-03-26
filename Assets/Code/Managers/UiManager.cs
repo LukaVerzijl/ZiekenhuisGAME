@@ -11,7 +11,7 @@ namespace Code.Managers
 
         public GameObject LoginModal;
         public GameObject ChooseModal;
-        public GameObject ChooseLevelChildModal;
+        public GameObject KindChooseModal;
         public GameObject RegisterModal;
         public GameObject OuderChoseModal;
         public GameObject ParentControlModal;
@@ -37,9 +37,9 @@ namespace Code.Managers
             ChooseModal.SetActive(true);
         }
 
-        public void ShowChooseLevelModal()
+        public void ShowKindChooseModal()
         {
-            ChooseLevelChildModal.SetActive(true);
+            KindChooseModal.SetActive(true);
         }
 
         public void ShowRegisterModal()
@@ -77,7 +77,7 @@ namespace Code.Managers
         {
             LoginModal.SetActive(false);
             ChooseModal.SetActive(false);
-            ChooseLevelChildModal.SetActive(false);
+            KindChooseModal.SetActive(false);
             RegisterModal.SetActive(false);
             OuderChoseModal.SetActive(false);
             ParentControlModal.SetActive(false);
