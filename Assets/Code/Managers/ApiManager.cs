@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Code.ApiClient.ModelApiClients;
 using Code.Utils;
 using UnityEngine;
 
@@ -14,7 +15,9 @@ public class ApiManager : Singleton<ApiManager>
 
     
     private GameObject spawnedUserApiClient;
+    private GameObject spawnedClientsApiClient;
     private UserApiClient userApiClient;
+    private ClientsApiClient clientsApiClient;
 
 
     #region Init
@@ -24,6 +27,7 @@ public class ApiManager : Singleton<ApiManager>
         spawnedUserApiClient = Instantiate(ApiClientObject, this.gameObject.transform);
         
         userApiClient = spawnedUserApiClient.GetComponent<UserApiClient>();
+        clientsApiClient = spawnedClientsApiClient.GetComponent<ClientsApiClient>();
         
         DontDestroyOnLoad(this.gameObject.transform.root.gameObject);
     }
