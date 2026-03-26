@@ -2,13 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Code.ApiClient.ModelApiClients;
+using Code.ApiClient.Models;
 using Code.Utils;
+using Newtonsoft.Json;
 using UnityEngine;
 
 public class ApiManager : Singleton<ApiManager>
 {
-    [Header("Test data")]
     public User user;
+    public Client client;
 
     [Header("Dependencies")]
     public GameObject ApiClientObject;
@@ -81,5 +83,46 @@ public class ApiManager : Singleton<ApiManager>
     }
 
     #endregion
+
+    #region Client
     
+    public async Task<bool> GetClientData()
+    {
+        
+        IWebRequestReponse webRequestResponse = await clientsApiClient.getClient(user);
+
+        switch (webRequestResponse)
+        {
+            case WebRequestData<string> dataResponse:
+                Debug.Log("Loaded Client data");
+                    client = JsonConvert.DeserializeObject<Client>(dataResponse.Data);
+                return false;
+            case WebRequestError errorResponse:
+                string errorMessage = errorResponse.ErrorMessage;
+                Debug.Log("Failed to get client data: " + errorMessage);
+                return false;
+            default:
+                throw new NotImplementedException("No implementation for webRequestResponse of class: " + webRequestResponse.GetType());
+        }
+    }
+
+    public async Task<bool> CreateClientData()
+    {
+        IWebRequestReponse webRequestResponse = await clientsApiClient.createClientData(client);
+
+        switch (webRequestResponse)
+        {
+            case WebRequestData<string> dataResponse:
+                Debug.Log("Created client data");
+                return true;
+            case WebRequestError errorResponse:
+                string errorMessage = errorResponse.ErrorMessage;
+                Debug.Log("Failed to create client data: " + errorMessage);
+                return false;
+            default:
+                throw new NotImplementedException("No implementation for webRequestResponse of class: " + webRequestResponse.GetType());
+        }
+        
+    }
+    #endregion
 }
