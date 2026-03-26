@@ -17,6 +17,7 @@ namespace Code.Managers
         public GameObject ParentControlModal;
         public GameObject KarakterKiezenModal;
         public GameObject VideoKindModal;
+        public GameObject AftelModalKind;
         
         #endregion
 
@@ -66,6 +67,11 @@ namespace Code.Managers
             VideoKindModal.SetActive(true);
         }
 
+        public void ShowAftelModalKind()
+        {
+            AftelModalKind.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
@@ -77,6 +83,7 @@ namespace Code.Managers
             ParentControlModal.SetActive(false);
             KarakterKiezenModal.SetActive(false);
             VideoKindModal.SetActive(false);
+            AftelModalKind.SetActive(false);
         }
 
     }
