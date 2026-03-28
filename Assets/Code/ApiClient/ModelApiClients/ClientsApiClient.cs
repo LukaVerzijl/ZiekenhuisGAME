@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Code.ApiClient.ModelApiClients
 {
-    public class ClientsApiClient
+    public class ClientsApiClient : MonoBehaviour
     {
         public WebClient webClient;
 
