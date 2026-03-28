@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.aleshmandr.pepersistent": {
+      "version": "https://github.com/Aleshmandr/Pepersistence.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "hash": "aaabad66d473ec1baf9a457d03934b0516d5aa09"
+    },
     "com.unity.2d.animation": {
       "version": "13.0.4",
       "depth": 0,
