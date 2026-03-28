@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Code.Managers.UiManager
   LoginModal: {fileID: 6680028273967333017}
   ChooseModal: {fileID: 1205097246041975260}
-  ChooseLevelChildModal: {fileID: 1947976620143758464}
+  KindChooseModal: {fileID: 1947976620143758464}
   RegisterModal: {fileID: 1637886486787859486}
   OuderChoseModal: {fileID: 6754216473321475215}
   ParentControlModal: {fileID: 5797388196447017714}
