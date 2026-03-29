@@ -2,6 +2,9 @@ using System;
 
 namespace Code.Utils.SaveData
 {
+    /// <summary>
+    /// JSON blueprint voor save file
+    /// </summary>
     [Serializable]
     public struct KindSafeData
     {

@@ -4,6 +4,10 @@ using Pepersistence;
 
 namespace Code.Managers
 {
+    /// <summary>
+    /// Class heeft save waardes lokaal variables worden opgeslagen en geladen in de functies. Voeg nieuwe dingen in de save file toe door een var aan te maken in de KindSafeData en deze hier te defineren, voeg deze in de load en save fuctie te plaatsen.
+    /// bassed op de Isaveable Interface met de uitleg van de JSON
+    /// </summary>
     public class SaveDataManager : Singleton<SaveDataManager>, ISavable<SaveData>
     {
         public string KindNaam;
