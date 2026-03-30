@@ -1392,6 +1392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NaamVragenOuder
       objectReference: {fileID: 0}
+    - target: {fileID: 3839347959208360310, guid: 919a8255557464cf8bcd325ea14a1b0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7757517662916653601, guid: 919a8255557464cf8bcd325ea14a1b0f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
