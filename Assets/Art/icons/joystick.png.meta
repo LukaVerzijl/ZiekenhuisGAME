@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: e9ee5f2963ebf493d83a7d008700bf3e
+guid: 11095f0721f214afabffd0980fb32a3c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6748357417598596234
-    second: organization_0
-  - first:
-      213: 5419340595994863895
-    second: organization_1
-  - first:
-      213: -428333207162812267
-    second: organization_2
-  - first:
-      213: -3441069424982769365
-    second: organization_3
-  - first:
-      213: -8866777366666033737
-    second: organization_4
-  - first:
-      213: -26116028072747077
-    second: organization_5
+      213: -1194685025707199936
+    second: joystick_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -154,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: organization_0
+      name: joystick_0
       rect:
         serializedVersion: 2
-        x: 178
-        y: 357
-        width: 156
-        height: 155
+        x: 0
+        y: 86
+        width: 512
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,118 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67bc9aadea40952a0800000000000000
-      internalID: -6748357417598596234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: organization_1
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 178
-        width: 157
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 719a0252f8d553b40800000000000000
-      internalID: 5419340595994863895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: organization_2
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 178
-        width: 157
-        height: 156
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5988e8da7314e0af0800000000000000
-      internalID: -428333207162812267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: organization_3
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 0
-        width: 157
-        height: 155
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b21c17ce69dde30d0800000000000000
-      internalID: -3441069424982769365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: organization_4
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 0
-        width: 156
-        height: 155
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b5c56596f0e2f480800000000000000
-      internalID: -8866777366666033737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: organization_5
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 0
-        width: 157
-        height: 155
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbf97cf5c9733aff0800000000000000
-      internalID: -26116028072747077
+      spriteID: 0427e308c40ab6fe0800000000000000
+      internalID: -1194685025707199936
       vertices: []
       indices: 
       edges: []
@@ -299,12 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      organization_0: -6748357417598596234
-      organization_1: 5419340595994863895
-      organization_2: -428333207162812267
-      organization_3: -3441069424982769365
-      organization_4: -8866777366666033737
-      organization_5: -26116028072747077
+      joystick_0: -1194685025707199936
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
