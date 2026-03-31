@@ -18,6 +18,8 @@ namespace Code.Managers
         public GameObject KarakterKiezenModal;
         public GameObject VideoKindModal;
         public GameObject AftelModalKind;
+        public GameObject NaamVragenKind;
+        public GameObject NaamVragenOuder;
         
         #endregion
 
@@ -72,6 +74,16 @@ namespace Code.Managers
             AftelModalKind.SetActive(true);
         }
 
+        public void ShowNaamVragenKind()
+        {
+            NaamVragenKind.SetActive(true);
+        }
+
+        public void ShowNaamVragenOuder()
+        {
+            NaamVragenOuder.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
@@ -84,6 +96,8 @@ namespace Code.Managers
             KarakterKiezenModal.SetActive(false);
             VideoKindModal.SetActive(false);
             AftelModalKind.SetActive(false);
+            NaamVragenKind.SetActive(false);
+            NaamVragenOuder.SetActive(false);
         }
 
     }
