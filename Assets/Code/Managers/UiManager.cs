@@ -21,6 +21,7 @@ namespace Code.Managers
         public GameObject NaamVragenKind;
         public GameObject NaamVragenOuder;
         public GameObject GameModalKind;
+        public GameObject ReadModalKind;
         
         #endregion
 
@@ -90,6 +91,11 @@ namespace Code.Managers
             GameModalKind.SetActive(true);
         }
 
+        public void ShowReadModalKind()
+        {
+            ReadModalKind.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
@@ -105,6 +111,7 @@ namespace Code.Managers
             NaamVragenKind.SetActive(false);
             NaamVragenOuder.SetActive(false);
             GameModalKind.SetActive(false);
+            ReadModalKind.SetActive(false);
         }
 
     }
