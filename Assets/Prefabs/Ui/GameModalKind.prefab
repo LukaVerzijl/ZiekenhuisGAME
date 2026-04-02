@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 4041913483259556495}
   - component: {fileID: 1319910811399073314}
   - component: {fileID: 5631009411875604024}
-  - component: {fileID: 3888658967505585237}
+  - component: {fileID: 6819140439383828811}
   m_Layer: 5
   m_Name: karakter
   m_TagString: Untagged
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3888658967505585237
+--- !u!114 &6819140439383828811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,12 +201,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2650945048502777820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 411ea292b8b81495d9283367cc3ea394, type: 3}
+  m_Script: {fileID: 11500000, guid: 35f889f8f2b4140ffa8af049f6c4d9d2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Dragable
+  m_EditorClassIdentifier: Assembly-CSharp::BearScript
   image: {fileID: 5631009411875604024}
   LayingSprite: {fileID: -4294396458099894500, guid: b45486bdb1c8e417baca155dd4eaf940, type: 3}
-  OnlyXAxis: 0
+  NormalSprite: {fileID: 4693792977596894205, guid: 9183cca92510b4811b6f3b749aa963c8, type: 3}
+  canBeDragged: 1
 --- !u!1 &3141382495635335593
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +255,6 @@ GameObject:
   - component: {fileID: 4254375447788692509}
   - component: {fileID: 7769826333967504539}
   - component: {fileID: 4751575661468315359}
-  - component: {fileID: 3083995821905196603}
   m_Layer: 5
   m_Name: Bed
   m_TagString: Untagged
@@ -279,7 +279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: -230}
+  m_AnchoredPosition: {x: -24, y: -230}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4254375447788692509
@@ -333,21 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BedScript
   transBed: {fileID: 7702793037531465846}
---- !u!114 &3083995821905196603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4109040162608495948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 411ea292b8b81495d9283367cc3ea394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Dragable
-  image: {fileID: 7769826333967504539}
-  LayingSprite: {fileID: 0}
-  OnlyXAxis: 1
+  bear: {fileID: 2650945048502777820}
 --- !u!1 &5302532893666413793
 GameObject:
   m_ObjectHideFlags: 0

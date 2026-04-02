@@ -3,12 +3,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
-public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class BearScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public Image image;
     public Sprite LayingSprite;
-    [HideInInspector]public bool canBeDragged = true;
-    public bool OnlyXAxis;
+    public Sprite NormalSprite;
+    [HideInInspector]public bool canBeDragged = true;   
+    
     public void OnBeginDrag(PointerEventData eventData)
     {
         image.raycastTarget = false;
@@ -18,16 +19,7 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         if (canBeDragged)
         {
-            if (OnlyXAxis)
-            {
-                var vector3 = transform.position; 
-                vector3.x = Mouse.current.position.ReadValue().x; 
-                transform.position = vector3;
-            }
-            else
-            {
-                transform.position = Mouse.current.position.ReadValue();
-            }
+            transform.position = Mouse.current.position.ReadValue();
         }
     }
 
