@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     //karakter components
     public BearScript KarakterScript;
     public Transform TransKarakter;
+    public Transform BearStandingPos;
 
     //bed components
     public RectTransform transBed;
@@ -28,6 +29,19 @@ public class GameManager : MonoBehaviour
             TransKarakter.position = BearLyingBed.position;
             StartMRiButton.SetActive(false);
             StartCoroutine(StartCountDown());
+        }
+    }
+
+    public void StopMRI()
+    {
+        if (KarakterScript.canBeDragged == false)
+        {
+            transBed.anchoredPosition = new Vector2(-20, -230);
+            TransKarakter.position = BearStandingPos.position;
+            KarakterScript.ChangeToNormal();
+            KarakterScript.canBeDragged = true;
+            StopMRiButton.SetActive(false);
+            StartMRiButton.SetActive(true);
         }
     }
 

@@ -32,4 +32,9 @@ public class BearScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     {
         image.sprite = LayingSprite;
     }
+
+    public void ChangeToNormal()
+    {
+        image.sprite = NormalSprite;
+    }
 }

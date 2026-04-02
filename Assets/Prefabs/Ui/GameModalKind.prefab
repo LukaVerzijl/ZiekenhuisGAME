@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   KarakterScript: {fileID: 6819140439383828811}
   TransKarakter: {fileID: 4041913483259556495}
+  BearStandingPos: {fileID: 338708898621056536}
   transBed: {fileID: 3805740220854720500}
   BearLyingBed: {fileID: 7702793037531465846}
   StartMRiButton: {fileID: 7516448236508479759}
@@ -169,11 +170,47 @@ RectTransform:
   - {fileID: 1144437017607122863}
   - {fileID: 3415338440513191714}
   - {fileID: 177460311539081548}
+  - {fileID: 338708898621056536}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2628330773126702057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 338708898621056536}
+  m_Layer: 5
+  m_Name: BearStandingPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &338708898621056536
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2628330773126702057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 424989670108844295}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 530, y: -200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2650945048502777820
@@ -211,7 +248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 532, y: -205}
+  m_AnchoredPosition: {x: 530, y: -200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1319910811399073314
@@ -658,7 +695,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3185596703371175787}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartMRI
+        m_MethodName: StopMRI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
