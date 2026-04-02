@@ -20,6 +20,7 @@ public class ApiManager : Singleton<ApiManager>
     private UserApiClient userApiClient;
     private ClientsApiClient clientsApiClient;
 
+    public bool isLoggedIn = false;
 
     #region Init
 
@@ -70,6 +71,7 @@ public class ApiManager : Singleton<ApiManager>
         {
             case WebRequestData<string> dataResponse:
                 Debug.Log("Login succes!");
+                isLoggedIn = true;
                 return true;
             case WebRequestError errorResponse:
                 string errorMessage = errorResponse.ErrorMessage;

@@ -18,6 +18,15 @@ namespace Code.Ui
         private bool isLoggingIn = false;
 
 
+        public void OnEnable()
+        {
+            if (ApiManager.Instance.isLoggedIn)
+            {
+                UiManager.Instance.HideAllUI();
+                UiManager.Instance.ShowParentControlModal();
+            }
+        }
+
         public async void Login()
         {
             if (isLoggingIn) return;
