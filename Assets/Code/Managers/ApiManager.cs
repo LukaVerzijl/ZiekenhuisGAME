@@ -119,7 +119,7 @@ public class ApiManager : Singleton<ApiManager>
                 Debug.Log("Failed to create client data: " + errorMessage);
                 return false;
             default:
-                throw new NotImplementedException("No implementation for webRequestResponse of class: " + webRequestResponse.GetType());
+                return true;
         }
         
     }

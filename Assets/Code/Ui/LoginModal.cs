@@ -1,3 +1,4 @@
+using System;
 using Code.Managers;
 using TMPro;
 using UnityEngine;
@@ -9,6 +10,11 @@ namespace Code.Ui
         [SerializeField] private TMP_InputField emailInput;
         [SerializeField] private TMP_InputField passwordInput;
         [SerializeField] private TMP_Text validationText;
+        [SerializeField] private TMP_InputField naamKind;
+        [SerializeField] private TMP_InputField leeftijdKind;
+        [SerializeField] private TMP_InputField naamArts;
+        [SerializeField] private TMP_InputField behandelDatum;
+        [SerializeField] private TMP_InputField TypeBehandeling;
         private bool isLoggingIn = false;
 
 
@@ -18,6 +24,8 @@ namespace Code.Ui
             isLoggingIn = true;
             ApiManager.Instance.user.Email = emailInput.text;
             ApiManager.Instance.user.Password = passwordInput.text;
+            
+            
             if (await ApiManager.Instance.Login())
             {
                 Debug.Log("Login succes!");
@@ -38,12 +46,28 @@ namespace Code.Ui
         {
             if (isLoggingIn) return;
             isLoggingIn = true;
+            if (!TryParseDate(behandelDatum.text, out DateTime parsedDate))
+            {
+                validationText.text = "Behandel datum is invalid!";
+                isLoggingIn = false;
+                return;
+            }
             ApiManager.Instance.user.Email = emailInput.text;
             ApiManager.Instance.user.Password = passwordInput.text;
+            ApiManager.Instance.client.KindNaam = naamKind.text;
+            ApiManager.Instance.client.LeeftijdKind = int.TryParse(leeftijdKind.text, out int leeftijd) ? leeftijd : 0;
+            ApiManager.Instance.client.DokterNaam = naamArts.text;
+            ApiManager.Instance.client.BehandelDatum = parsedDate;
+            ApiManager.Instance.client.TypeBehandeling = TypeBehandeling.text;
             if (await ApiManager.Instance.Register())
             { 
                 isLoggingIn = false;
-                UiManager.Instance.ShowParentControlModal();
+                if (await ApiManager.Instance.CreateClientData())
+                {
+                    UiManager.Instance.HideAllUI();
+                    UiManager.Instance.ShowParentControlModal();
+                }
+
             }
             else
             {
@@ -52,6 +76,17 @@ namespace Code.Ui
             }
         }
 
-        
+        private bool TryParseDate(string value, out DateTime result)
+        {
+            return DateTime.TryParseExact(
+                value,
+            new [] {"dd/MM/yyyy", "dd-MM-yyyy" },
+
+        System.Globalization.CultureInfo.InvariantCulture,
+                System.Globalization.DateTimeStyles.None,
+                out result
+            );
+        }
+
     }
 }

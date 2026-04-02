@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7382838683730138020}
   - component: {fileID: 8029947802088723949}
   - component: {fileID: 7616104044171292779}
+  - component: {fileID: 6428333434426625972}
   m_Layer: 0
   m_Name: ApiClient
   m_TagString: Untagged
@@ -72,4 +73,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed4f7f0e67c302469248224d4bac5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UserApiClient
+  webClient: {fileID: 7382838683730138020}
+--- !u!114 &6428333434426625972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784580286117217617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f258cbf8c5b4bba8661666c885e1658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.ApiClient.ModelApiClients.ClientsApiClient
   webClient: {fileID: 7382838683730138020}
