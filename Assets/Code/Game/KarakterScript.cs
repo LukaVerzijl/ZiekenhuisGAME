@@ -3,13 +3,14 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
-public class BearScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+
+public class KarakterScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     public Image image;
     public Sprite LayingSprite;
     public Sprite NormalSprite;
     [HideInInspector]public bool canBeDragged = true;   
-    
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         image.raycastTarget = false;

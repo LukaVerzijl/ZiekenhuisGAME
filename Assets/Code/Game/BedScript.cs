@@ -13,7 +13,7 @@ public class BedScript : MonoBehaviour, IDropHandler
     {
         GameObject dropped = eventData.pointerDrag;
         dropped.transform.position = transBed.position;
-        dropped.GetComponent<BearScript>().ChangeToLayingImage();
-        dropped.GetComponent<BearScript>().canBeDragged = false;
+        dropped.GetComponent<KarakterScript>().ChangeToLayingImage();
+        dropped.GetComponent<KarakterScript>().canBeDragged = false;
     }
 }

@@ -5,13 +5,14 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     //karakter components
-    public BearScript KarakterScript;
+    private KarakterScript KarakterScript; /*Het karakter script moet ingeladen worden aan de hand van de opgeslagen karakter van de gebruiker,
+    je krijgt nu een null refrence!*/
     public Transform TransKarakter;
-    public Transform BearStandingPos;
+    public Transform StandingPos;
 
     //bed components
     public RectTransform transBed;
-    public Transform BearLyingBed;
+    public Transform LyingPos;
     
     //buttons
     public GameObject StartMRiButton;
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
         if (KarakterScript.canBeDragged == false)
         {
             transBed.anchoredPosition = new Vector2(-280, -230);
-            TransKarakter.position = BearLyingBed.position;
+            TransKarakter.position = LyingPos.position;
             StartMRiButton.SetActive(false);
             StartCoroutine(StartCountDown());
         }
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
         if (KarakterScript.canBeDragged == false)
         {
             transBed.anchoredPosition = new Vector2(-20, -230);
-            TransKarakter.position = BearStandingPos.position;
+            TransKarakter.position = StandingPos.position;
             KarakterScript.ChangeToNormal();
             KarakterScript.canBeDragged = true;
             StopMRiButton.SetActive(false);
