@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Al een account? Login hier
       objectReference: {fileID: 0}
+    - target: {fileID: 4541888894140927213, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
+      propertyPath: m_Name
+      value: RegisterB
+      objectReference: {fileID: 0}
     - target: {fileID: 4709485803697351299, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
       propertyPath: m_text
       value: Register
@@ -31,6 +35,10 @@ PrefabInstance:
     - target: {fileID: 7819889738840653257, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
       propertyPath: m_text
       value: Login
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031849106494136793, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Register
       objectReference: {fileID: 0}
     - target: {fileID: 8174916618250550694, guid: cdca42ab746114bc9b2f2e29736312c2, type: 3}
       propertyPath: m_Name
