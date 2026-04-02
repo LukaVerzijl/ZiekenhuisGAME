@@ -13,7 +13,7 @@ namespace Code.ApiClient.ModelApiClients
             string route = $"/client";
             string data = JsonConvert.SerializeObject(user, JsonHelper.CamelCaseSettings);
 
-            return await webClient.SendPostRequest(route, data);
+            return await webClient.SendGetRequest(route);
         }
 
         public async Awaitable<IWebRequestReponse> createClientData(Client client)

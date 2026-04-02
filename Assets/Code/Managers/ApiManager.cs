@@ -96,7 +96,13 @@ public class ApiManager : Singleton<ApiManager>
         {
             case WebRequestData<string> dataResponse:
                 Debug.Log("Loaded Client data");
-                    client = JsonConvert.DeserializeObject<Client>(dataResponse.Data);
+                var clients = JsonConvert.DeserializeObject<List<Client>>(dataResponse.Data);
+                if (clients != null && clients.Count > 0)
+                {
+                    client = clients[0];
+                    Debug.Log($"Client loaded: {client.KindNaam}");
+                    return true;
+                }
                 return false;
             case WebRequestError errorResponse:
                 string errorMessage = errorResponse.ErrorMessage;
