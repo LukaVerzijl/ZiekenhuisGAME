@@ -13,5 +13,6 @@ namespace Code.Utils.SaveData
         public bool hasReadPart2;
         public bool hasReadPart3;
         public bool hasReadPart4;
+        public int chosenCharacter;
     }
 }

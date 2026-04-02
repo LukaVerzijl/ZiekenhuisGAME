@@ -15,6 +15,7 @@ namespace Code.Managers
         public bool hasReadPart2;
         public bool hasReadPart3;
         public bool hasReadPart4;
+        public int chosenCharacter;
 
 
         public void Load(SaveData saveData)
@@ -24,6 +25,7 @@ namespace Code.Managers
             hasReadPart2 = saveData.KindSafeData.hasReadPart2;
             hasReadPart3 = saveData.KindSafeData.hasReadPart3;
             hasReadPart4 = saveData.KindSafeData.hasReadPart4;
+            chosenCharacter = saveData.KindSafeData.chosenCharacter;
         }
 
         public void Save(ref SaveData saveData)
@@ -33,6 +35,7 @@ namespace Code.Managers
             saveData.KindSafeData.hasReadPart2 = hasReadPart2;
             saveData.KindSafeData.hasReadPart3 = hasReadPart3;
             saveData.KindSafeData.hasReadPart4 = hasReadPart4;
+            saveData.KindSafeData.chosenCharacter = chosenCharacter;
         }
     }
 }

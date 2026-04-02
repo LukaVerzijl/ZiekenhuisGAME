@@ -477,6 +477,7 @@ GameObject:
   - component: {fileID: 4237235465727513078}
   - component: {fileID: 3237766222409017935}
   - component: {fileID: 5120878076153185743}
+  - component: {fileID: 5536278258675281443}
   m_Layer: 5
   m_Name: Karakter2B
   m_TagString: Untagged
@@ -585,6 +586,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5536278258675281443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4311662422676749033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08646de7ef25462cac13f766e153e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.Ui.SetKarakter
+  beerKarakter: {fileID: 0}
+  visKarakter: {fileID: 0}
+  bijKarakter: {fileID: 0}
 --- !u!1 &5899557746247370789
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +689,7 @@ GameObject:
   - component: {fileID: 7844914150974552309}
   - component: {fileID: 586568693444963513}
   - component: {fileID: 7547893500323057303}
+  - component: {fileID: 7037286416135046616}
   m_Layer: 5
   m_Name: Karakter1B
   m_TagString: Untagged
@@ -793,6 +810,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7037286416135046616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6041124618320774946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08646de7ef25462cac13f766e153e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.Ui.SetKarakter
+  beerKarakter: {fileID: 0}
+  visKarakter: {fileID: 0}
+  bijKarakter: {fileID: 0}
 --- !u!1 &6752031859384494323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1049,7 @@ GameObject:
   - component: {fileID: 911623032814359215}
   - component: {fileID: 5314893208030520342}
   - component: {fileID: 3041836348405975625}
+  - component: {fileID: 3650950713989158868}
   m_Layer: 5
   m_Name: Karakter3B
   m_TagString: Untagged
@@ -1125,3 +1158,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3650950713989158868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690389716977740982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08646de7ef25462cac13f766e153e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.Ui.SetKarakter
+  beerKarakter: {fileID: 0}
+  visKarakter: {fileID: 0}
+  bijKarakter: {fileID: 0}
