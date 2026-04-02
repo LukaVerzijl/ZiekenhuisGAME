@@ -2,10 +2,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class BedScript : MonoBehaviour, IDropHandler, IDragHandler
+public class BedScript : MonoBehaviour, IDropHandler
 {
     public Transform transBed;
     public GameObject bear;
+    public Transform ownTrans;
     [HideInInspector]public bool canBeDragged = true;
     
     public void OnDrop(PointerEventData eventData)
@@ -14,19 +15,5 @@ public class BedScript : MonoBehaviour, IDropHandler, IDragHandler
         dropped.transform.position = transBed.position;
         dropped.GetComponent<BearScript>().ChangeToLayingImage();
         dropped.GetComponent<BearScript>().canBeDragged = false;
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        if (canBeDragged)
-        {
-            var vector3 = transform.position; 
-            vector3.x = Mouse.current.position.ReadValue().x; 
-            transform.position = vector3;
-            if (bear.GetComponent<BearScript>().canBeDragged == false)
-            {
-                bear.transform.position = transBed.position;
-            }
-        }
     }
 }
