@@ -5,6 +5,8 @@ public class TtsAudioController : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioClip;
+    [SerializeField] private GameObject playButton;
+    [SerializeField] private GameObject pauseButton;
 
     public void StartAudio()
     {
@@ -19,6 +21,8 @@ public class TtsAudioController : MonoBehaviour
         }
 
         audioSource.Play();
+        playButton.SetActive(false);
+        pauseButton.SetActive(true);
     }
 
     public void StopAudio()
@@ -29,5 +33,7 @@ public class TtsAudioController : MonoBehaviour
         }
 
         audioSource.Stop();
+        playButton.SetActive(true);
+        pauseButton.SetActive(false);
     }
 }
