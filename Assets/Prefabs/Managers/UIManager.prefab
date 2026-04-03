@@ -1959,7 +1959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6248986960993438218, guid: 038e690d13f894a198ce031af69d5038, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6248986960993438218, guid: 038e690d13f894a198ce031af69d5038, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2003,7 +2003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6248986960993438218, guid: 038e690d13f894a198ce031af69d5038, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: HideAllUI
+      value: ShowKarakterKiezenModal
       objectReference: {fileID: 0}
     - target: {fileID: 6248986960993438218, guid: 038e690d13f894a198ce031af69d5038, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2759,7 +2759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7547893500323057303, guid: 78c8828c99bac4ffc9a3f396c537f8a8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7547893500323057303, guid: 78c8828c99bac4ffc9a3f396c537f8a8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2799,7 +2799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7547893500323057303, guid: 78c8828c99bac4ffc9a3f396c537f8a8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: HideAllUI
+      value: ShowKindChooseModal
       objectReference: {fileID: 0}
     - target: {fileID: 7547893500323057303, guid: 78c8828c99bac4ffc9a3f396c537f8a8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3158,7 +3158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1690686018140195459, guid: e46fbf2566f004919afc61fa5a4acfc4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ShowNaamVragenOuder
+      value: ShowOuderChoseModal
       objectReference: {fileID: 0}
     - target: {fileID: 1690686018140195459, guid: e46fbf2566f004919afc61fa5a4acfc4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
