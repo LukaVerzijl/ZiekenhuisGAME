@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public RectTransform transBed;
     public Transform LyingPos;
     
+    //mri component
+    public AudioSource MRIAudio;
+    
     //buttons
     public GameObject StartMRiButton;
     public GameObject StopMRiButton;
@@ -50,6 +53,7 @@ public class GameManager : MonoBehaviour
         //verplaatsen van dier en bed
         transBed.anchoredPosition = new Vector2(-280, -230);
         TransKarakter.position = LyingPos.position;
+        MRIAudio.Play();
         
         StartMRiButton.SetActive(false);// verdwijnen MRI start knop
         
@@ -68,5 +72,6 @@ public class GameManager : MonoBehaviour
         StopMRiButton.SetActive(true);
         
         GameFeedBackText.text = "De MRI is klaar, druk op de stop knop!";
+        MRIAudio.Stop();
     }
 }
