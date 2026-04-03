@@ -8,6 +8,7 @@ namespace Code.Managers
 {
     public class UiManager :Singleton<UiManager>
     {
+        
         #region Modal
 
         public GameObject LoginModal;
@@ -26,6 +27,7 @@ namespace Code.Managers
         public GameObject VoorMRIModalOuder;
         public GameObject TijdensMRIModalOuder;
         public GameObject NaMRIModalOuder;
+        public GameObject ColorChangeModal;
         
         #endregion
 
@@ -115,6 +117,11 @@ namespace Code.Managers
             NaMRIModalOuder.SetActive(true);
         }
 
+        public void ShowColorChangeModal()
+        {
+            ColorChangeModal.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
@@ -134,6 +141,7 @@ namespace Code.Managers
             VoorMRIModalOuder.SetActive(false);
             TijdensMRIModalOuder.SetActive(false);
             NaMRIModalOuder.SetActive(false);
+            ColorChangeModal.SetActive(false);
         }
 
     }
