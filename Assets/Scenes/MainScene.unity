@@ -427,6 +427,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2389614402371885201, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775280651661458753, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775280651661458753, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775280651661458753, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3205584362895239938, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -509,6 +525,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3538705119437516825, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413560251907068332, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515377867876955260, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515377867876955260, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515377867876955260, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5908471734979138747, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}

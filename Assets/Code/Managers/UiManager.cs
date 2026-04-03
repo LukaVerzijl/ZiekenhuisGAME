@@ -23,6 +23,9 @@ namespace Code.Managers
         public GameObject NaamVragenOuder;
         public GameObject GameModalKind;
         public GameObject ReadModalKind;
+        public GameObject VoorMRIModalOuder;
+        public GameObject TijdensMRIModalOuder;
+        public GameObject NaMRIModalOuder;
         
         #endregion
 
@@ -97,6 +100,21 @@ namespace Code.Managers
             ReadModalKind.SetActive(true);
         }
 
+        public void ShowVoorMRIModalOuder()
+        {
+            VoorMRIModalOuder.SetActive(true);
+        }
+
+        public void ShowTijdensMRIModalOuder()
+        {
+            TijdensMRIModalOuder.SetActive(true);
+        }
+
+        public void ShowNaMRIModalOuder()
+        {
+            NaMRIModalOuder.SetActive(true);
+        }
+
 
         public void HideAllUI()
         {
@@ -113,6 +131,9 @@ namespace Code.Managers
             NaamVragenOuder.SetActive(false);
             GameModalKind.SetActive(false);
             ReadModalKind.SetActive(false);
+            VoorMRIModalOuder.SetActive(false);
+            TijdensMRIModalOuder.SetActive(false);
+            NaMRIModalOuder.SetActive(false);
         }
 
     }
