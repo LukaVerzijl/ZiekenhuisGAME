@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3415338440513191714}
-  - component: {fileID: 3185596703371175787}
+  - component: {fileID: 7430793239163808215}
   m_Layer: 5
   m_Name: GameManager
   m_TagString: Untagged
@@ -36,7 +36,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3185596703371175787
+--- !u!114 &7430793239163808215
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   KarakterScript: {fileID: 0}
-  TransKarakter: {fileID: 4041913483259556495}
+  TransKarakter: {fileID: 0}
   StandingPos: {fileID: 338708898621056536}
   transBed: {fileID: 3805740220854720500}
   LyingPos: {fileID: 7702793037531465846}
@@ -420,7 +420,7 @@ MonoBehaviour:
   image: {fileID: 5631009411875604024}
   LayingSprite: {fileID: -4294396458099894500, guid: b45486bdb1c8e417baca155dd4eaf940, type: 3}
   NormalSprite: {fileID: 4693792977596894205, guid: 9183cca92510b4811b6f3b749aa963c8, type: 3}
-  GameManager: {fileID: 3185596703371175787}
+  GameManager: {fileID: 7430793239163808215}
   canBeDragged: 1
 --- !u!1 &2722443987766233717
 GameObject:
@@ -513,7 +513,7 @@ MonoBehaviour:
   image: {fileID: 646562599777274263}
   LayingSprite: {fileID: 7131565568171872711, guid: 0eb2b8e32b501431689914e26a68f87d, type: 3}
   NormalSprite: {fileID: 6683615111705859281, guid: 9b56fedf389e7435da2cbb29fc2340a8, type: 3}
-  GameManager: {fileID: 3185596703371175787}
+  GameManager: {fileID: 7430793239163808215}
   canBeDragged: 1
 --- !u!1 &3141382495635335593
 GameObject:
@@ -641,7 +641,7 @@ MonoBehaviour:
   image: {fileID: 5253599117868402267}
   LayingSprite: {fileID: -5682691378589471402, guid: 34c8122f7f9fe43e198b88159d8ba106, type: 3}
   NormalSprite: {fileID: -1915776564401465818, guid: ba2f466fe848140d78e6872ad2e8ea76, type: 3}
-  GameManager: {fileID: 3185596703371175787}
+  GameManager: {fileID: 7430793239163808215}
   canBeDragged: 1
 --- !u!1 &4109040162608495948
 GameObject:
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3185596703371175787}
+      - m_Target: {fileID: 7430793239163808215}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: StopMRI
         m_Mode: 1
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3185596703371175787}
+      - m_Target: {fileID: 7430793239163808215}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: StartMRI
         m_Mode: 1

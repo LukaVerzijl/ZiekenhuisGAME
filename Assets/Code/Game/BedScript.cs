@@ -15,5 +15,6 @@ public class BedScript : MonoBehaviour, IDropHandler
         dropped.transform.position = transBed.position;
         dropped.GetComponent<KarakterScript>().ChangeToLayingImage();
         dropped.GetComponent<KarakterScript>().canBeDragged = false;
+        Debug.Log(dropped.GetComponent<KarakterScript>().canBeDragged);
     }
 }
