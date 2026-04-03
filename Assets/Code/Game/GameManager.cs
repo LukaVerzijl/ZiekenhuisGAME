@@ -5,8 +5,8 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     //karakter components
-    [HideInInspector]public KarakterScript KarakterScript; /*VOOR LUKA: het probleem met de null refrence is gefixed*/
-    public Transform TransKarakter;
+    [HideInInspector] public KarakterScript KarakterScript; /*VOOR LUKA: het probleem met de null refrence is gefixed*/
+    [HideInInspector ]public Transform TransKarakter;
     public Transform StandingPos;
 
     //bed components
