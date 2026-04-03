@@ -240,6 +240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 424989670108844295}
+  - component: {fileID: 2476670640208541932}
   m_Layer: 5
   m_Name: GameModalKind
   m_TagString: Untagged
@@ -278,6 +279,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2476670640208541932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2536946578563839221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08646de7ef25462cac13f766e153e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Code.Ui.SetKarakter
+  beerKarakter: {fileID: 2650945048502777820}
+  visKarakter: {fileID: 3394214828142080239}
+  bijKarakter: {fileID: 2722443987766233717}
 --- !u!1 &2628330773126702057
 GameObject:
   m_ObjectHideFlags: 0
