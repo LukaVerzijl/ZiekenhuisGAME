@@ -5,8 +5,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     //karakter components
-    private KarakterScript KarakterScript; /*Het karakter script moet ingeladen worden aan de hand van de opgeslagen karakter van de gebruiker,
-    je krijgt nu een null refrence!*/
+    [HideInInspector]public KarakterScript KarakterScript; /*VOOR LUKA: het probleem met de null refrence is gefixed*/
     public Transform TransKarakter;
     public Transform StandingPos;
 
@@ -19,17 +18,15 @@ public class GameManager : MonoBehaviour
     public GameObject StopMRiButton;
     
     //timer variablen
-    public TextMeshProUGUI CoutndownText;
+    public TextMeshProUGUI GameFeedBackText;
     [HideInInspector] public float CountdownTime = 10f;
 
     public void StartMRI()
     {
         if (KarakterScript.canBeDragged == false)
         {
-            transBed.anchoredPosition = new Vector2(-280, -230);
-            TransKarakter.position = LyingPos.position;
-            StartMRiButton.SetActive(false);
-            StartCoroutine(StartCountDown());
+            StartCoroutine(StartMRICoroutine());
+            CountdownTime = 10f;
         }
     }
 
@@ -43,23 +40,33 @@ public class GameManager : MonoBehaviour
             KarakterScript.canBeDragged = true;
             StopMRiButton.SetActive(false);
             StartMRiButton.SetActive(true);
+            GameFeedBackText.color = Color.green;
+            GameFeedBackText.text = "De MRI is klaar, goed gedaan!";
         }
     }
 
-    IEnumerator StartCountDown()
+    IEnumerator StartMRICoroutine()
     {
+        //verplaatsen van dier en bed
+        transBed.anchoredPosition = new Vector2(-280, -230);
+        TransKarakter.position = LyingPos.position;
+        
+        StartMRiButton.SetActive(false);// verdwijnen MRI start knop
+        
+        GameFeedBackText.color = Color.white;
+        GameFeedBackText.text = "De MRI is begonnen! blijf voor 10 seconden wachten";
+        
+        //coutndown loop
         while (CountdownTime > 0)
         {
-            CoutndownText.text = CountdownTime.ToString("0");
-            
             yield return new WaitForSeconds(1f);
-            
             Debug.Log(CountdownTime);
-
             CountdownTime--;
         }
         
-        CoutndownText.text = "0";
+        CountdownTime = 0;
         StopMRiButton.SetActive(true);
+        
+        GameFeedBackText.text = "De MRI is klaar, druk op de stop knop!";
     }
 }

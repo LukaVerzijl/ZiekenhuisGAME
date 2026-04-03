@@ -9,11 +9,14 @@ public class KarakterScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IE
     public Image image;
     public Sprite LayingSprite;
     public Sprite NormalSprite;
+    public GameManager GameManager;
     [HideInInspector]public bool canBeDragged = true;   
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        GameObject dropped = eventData.pointerDrag;
         image.raycastTarget = false;
+        GameManager.KarakterScript = dropped.GetComponent<KarakterScript>();
     }
 
     public void OnDrag(PointerEventData eventData)
