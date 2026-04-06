@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using Code.Ui;
 using Code.Utils;
 using UnityEngine;
 
@@ -8,6 +5,7 @@ namespace Code.Managers
 {
     public class UiManager :Singleton<UiManager>
     {
+        private GameObject lastOpenMenu;
         
         #region Modal
 
