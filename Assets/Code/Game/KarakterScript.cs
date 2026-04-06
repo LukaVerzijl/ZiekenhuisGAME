@@ -24,7 +24,11 @@ public class KarakterScript : MonoBehaviour, IDragHandler, IBeginDragHandler, IE
     {
         if (canBeDragged)
         {
-            transform.position = Mouse.current.position.ReadValue();
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+            Vector3 positionInWorld = Camera.main.ScreenToWorldPoint(mousePos);
+            positionInWorld.z = 0;
+            transform.position = positionInWorld;
+            
         }
     }
 

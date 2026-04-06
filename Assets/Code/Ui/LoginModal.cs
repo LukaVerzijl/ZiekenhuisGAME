@@ -64,7 +64,7 @@ namespace Code.Ui
             ApiManager.Instance.user.Email = emailInput.text;
             ApiManager.Instance.user.Password = passwordInput.text;
             ApiManager.Instance.client.KindNaam = naamKind.text;
-            ApiManager.Instance.client.LeeftijdKind = int.TryParse(leeftijdKind.text, out int leeftijd) ? leeftijd : 0;
+            ApiManager.Instance.client.LeeftijdKind = leeftijdKind.text;
             ApiManager.Instance.client.DokterNaam = naamArts.text;
             ApiManager.Instance.client.BehandelDatum = parsedDate;
             ApiManager.Instance.client.TypeBehandeling = TypeBehandeling.text;

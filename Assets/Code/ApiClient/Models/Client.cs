@@ -7,7 +7,7 @@ namespace Code.ApiClient.Models
     {
         public string? OuderAccountId { get; set; }
         public string KindNaam { get; set; }
-        public int LeeftijdKind { get; set; }
+        public string LeeftijdKind { get; set; }
         public string DokterNaam { get; set; }
         public string TypeBehandeling { get; set; }
         public DateTime BehandelDatum { get; set; }
