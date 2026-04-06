@@ -512,6 +512,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3094549280192798596, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
+      propertyPath: globalVolume
+      value: 
+      objectReference: {fileID: 856956613}
     - target: {fileID: 3205584362895239938, guid: c8886b818ad4b4e40a0baadf2a5fb008, type: 3}
       propertyPath: m_IsActive
       value: 0
